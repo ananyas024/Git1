@@ -1,0 +1,53 @@
+Experiment 1
+git config --global user.name "your name"
+git config --global user.email "youremail@gmail.com"
+ git init
+ git clone https://github.com/ananyas024/Git1.git
+ cd Git1
+ notepad c1.txt
+ notepad c2.txt
+ git add .
+ git commit -m "My First and Second Commit"
+ git push
+
+Experiment 2
+ git checkout -b feature-branch
+ notepad c3.txt
+ git add .
+ git commit -m "My Third Commit"
+ git checkout main
+ git merge feature-branch
+notepad c4.txt
+git add .
+git stash
+git checkout main
+git stash apply
+git log
+git add .
+git commit -m "My Fourth Commit"
+git log
+
+Experiment 3
+git clone https://github.com/ananyas024/Git1.git
+(make changes in remote repo)
+git fetch origin
+git rebase origin/main
+
+Experiment 4
+git log --oneline
+git tag -a v1.0 -m "Tag v1.0"
+git show v1.0
+git push origin v1.0
+git log
+
+Experiment 5
+git log --oneline
+git checkout feature-branch
+git cherry-pick da98b66
+git log –oneline
+
+Experiment 6
+git show 504acbd
+git log --author="Ananya S" --after="28-07-2024" --before="30-07-2024"
+git log -n 2
+git revert c8d1c28
